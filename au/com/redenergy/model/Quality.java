@@ -1,6 +1,6 @@
 // Copyright Red Energy Limited 2017
 
-package simplenem12;
+package au.com.redenergy.model;
 
 /**
  * Represents meter read quality in SimpleNem12
@@ -8,6 +8,7 @@ package simplenem12;
 public enum Quality {
 
   A,
-  E
+  E,
+  OTHER
   
 }
