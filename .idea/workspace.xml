@@ -2,28 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="347a6169-012a-4a55-b298-630cc0da0709" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au/com/redenergy/model/BaseDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au/com/redenergy/model/LineDTO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au/com/redenergy/parser/MeterDataParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au/com/redenergy/parser/MeterDataParserFileImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au/com/redenergy/rules/EnergyUnitRule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au/com/redenergy/rules/FirstRecordRule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au/com/redenergy/rules/LastRecordRule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au/com/redenergy/rules/MeterReadRule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au/com/redenergy/rules/NMILengthRule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au/com/redenergy/rules/QualityRule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au/com/redenergy/service/FileParserService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/au/com/redenergy/util/RuleUtil.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SimpleNem12Parser.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/EnergyUnit.java" afterPath="$PROJECT_DIR$/au/com/redenergy/model/EnergyUnit.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MeterRead.java" afterPath="$PROJECT_DIR$/au/com/redenergy/model/MeterReadDTO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/MeterVolume.java" afterPath="$PROJECT_DIR$/au/com/redenergy/model/MeterVolumeDTO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Quality.java" afterPath="$PROJECT_DIR$/au/com/redenergy/model/Quality.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/simplenem12/TestHarness.class" afterPath="$PROJECT_DIR$/out/production/simplenem12/TestHarness.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/simplenem12/au/com/redenergy/parser/MeterDataParserFileImpl.class" afterPath="$PROJECT_DIR$/out/production/simplenem12/au/com/redenergy/parser/MeterDataParserFileImpl.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/simplenem12/au/com/redenergy/rules/LastRecordRule.class" afterPath="$PROJECT_DIR$/out/production/simplenem12/au/com/redenergy/rules/LastRecordRule.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/simplenem12/au/com/redenergy/rules/Test.class" afterPath="$PROJECT_DIR$/out/production/simplenem12/au/com/redenergy/rules/Test.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/simplenem12/au/com/redenergy/service/FileParserService.class" afterPath="$PROJECT_DIR$/out/production/simplenem12/au/com/redenergy/service/FileParserService.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/simplenem12/au/com/redenergy/util/RuleUtil.class" afterPath="$PROJECT_DIR$/out/production/simplenem12/au/com/redenergy/util/RuleUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestHarness.java" afterPath="$PROJECT_DIR$/TestHarness.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/au/com/redenergy/rules/Test.java" afterPath="$PROJECT_DIR$/au/com/redenergy/rules/Test.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/au/com/redenergy/service/FileParserService.java" afterPath="$PROJECT_DIR$/au/com/redenergy/service/FileParserService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/au/com/redenergy/util/RuleUtil.java" afterPath="$PROJECT_DIR$/au/com/redenergy/util/RuleUtil.java" />
     </list>
     <ignored path="simplenem12.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,12 +40,36 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/au/com/redenergy/rules/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="41" column="41" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="41" />
+            <state relative-caret-position="346">
+              <caret line="100" column="91" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1954#1968#0" expanded="true" />
+                <element signature="e#1985#1999#0" expanded="true" />
+                <element signature="e#3613#3627#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RuleUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/au/com/redenergy/util/RuleUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#894#909#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LastRecordRule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/au/com/redenergy/rules/LastRecordRule.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="11" column="81" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,8 +77,8 @@
       <file leaf-file-name="TestHarness.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/TestHarness.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
+            <state relative-caret-position="238">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -74,24 +86,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MeterDataParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/au/com/redenergy/parser/MeterDataParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileParserService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FileParserService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/au/com/redenergy/service/FileParserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+            <state relative-caret-position="532">
+              <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#840#854#0" expanded="true" />
+                <element signature="e#966#980#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -185,11 +187,8 @@
         <option value="$PROJECT_DIR$/au/com/redenergy/model/LineDTO.java" />
         <option value="$PROJECT_DIR$/au/com/redenergy/rules/MeterReadRule.java" />
         <option value="$PROJECT_DIR$/au/com/redenergy/rules/FirstRecordRule.java" />
-        <option value="$PROJECT_DIR$/au/com/redenergy/rules/LastRecordRule.java" />
         <option value="$PROJECT_DIR$/au/com/redenergy/rules/ValidateNMIRule.java" />
         <option value="$PROJECT_DIR$/au/com/redenergy/rules/EnergyUnitRule.java" />
-        <option value="$PROJECT_DIR$/au/com/redenergy/rules/Test.java" />
-        <option value="$PROJECT_DIR$/au/com/redenergy/util/RuleUtil.java" />
         <option value="$PROJECT_DIR$/au/com/redenergy/rules/QualityRule.java" />
         <option value="$PROJECT_DIR$/au/com/redenergy/parser/MeterDataParser.java" />
         <option value="$PROJECT_DIR$/TestHarness.java" />
@@ -197,7 +196,10 @@
         <option value="$PROJECT_DIR$/au/com/redenergy/model/MeterVolumeDTO.java" />
         <option value="$PROJECT_DIR$/au/com/redenergy/rules/NMILengthRule.java" />
         <option value="$PROJECT_DIR$/au/com/redenergy/parser/MeterDataParserFileImpl.java" />
+        <option value="$PROJECT_DIR$/au/com/redenergy/rules/Test.java" />
         <option value="$PROJECT_DIR$/au/com/redenergy/service/FileParserService.java" />
+        <option value="$PROJECT_DIR$/au/com/redenergy/rules/LastRecordRule.java" />
+        <option value="$PROJECT_DIR$/au/com/redenergy/util/RuleUtil.java" />
       </list>
     </option>
   </component>
@@ -210,7 +212,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
-    <option name="width" value="1932" />
+    <option name="width" value="1928" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -286,6 +288,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simplenem12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simplenem12" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="redenergy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -650,7 +670,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1932" height="1047" extended-state="0" />
+    <frame x="-7" y="0" width="1928" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -666,7 +686,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.250523" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -693,14 +713,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/au/com/redenergy/rules/Test.java</url>
-          <line>71</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
@@ -861,17 +873,7 @@
         <state relative-caret-position="238">
           <caret line="14" column="81" selection-start-line="14" selection-start-column="81" selection-end-line="14" selection-end-column="81" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/au/com/redenergy/rules/LastRecordRule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="81" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -881,29 +883,7 @@
         <state relative-caret-position="187">
           <caret line="11" column="58" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="58" />
           <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/au/com/redenergy/util/RuleUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#875#890#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/au/com/redenergy/rules/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="41" column="41" selection-start-line="41" selection-start-column="26" selection-end-line="41" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1954#1968#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -963,16 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestHarness.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="79" selection-start-line="19" selection-start-column="79" selection-end-line="19" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/au/com/redenergy/parser/MeterDataParserFileImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -983,13 +953,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/au/com/redenergy/service/FileParserService.java">
+    <entry file="file://$PROJECT_DIR$/au/com/redenergy/rules/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+        <state relative-caret-position="346">
+          <caret line="100" column="91" selection-start-line="100" selection-start-column="12" selection-end-line="100" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#840#854#0" expanded="true" />
+            <element signature="e#1985#1999#0" expanded="true" />
+            <element signature="e#3613#3627#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au/com/redenergy/service/FileParserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#966#980#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestHarness.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au/com/redenergy/rules/LastRecordRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="81" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/au/com/redenergy/util/RuleUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#894#909#0" expanded="true" />
           </folding>
         </state>
       </provider>

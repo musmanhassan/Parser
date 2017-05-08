@@ -6,6 +6,7 @@ import au.com.redenergy.model.MeterVolumeDTO;
 import au.com.redenergy.model.Quality;
 import au.com.redenergy.util.RuleUtil;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.math.BigDecimal;
 import java.nio.file.Files;
@@ -89,6 +90,49 @@ public class Test {
 
    }
 
+
+    public void test3(){
+
+        List<MeterReadDTO> meterReadList = new ArrayList<MeterReadDTO>();
+        String fileName = "SimpleNem12.csv";
+
+        try(BufferedReader br = Files.newBufferedReader(Paths.get(fileName))){
+            Supplier<Stream<String>> streamSupplier = () -> br.lines();
+            Optional<String> last = streamSupplier.get().reduce((first, second) -> second);
+            System.out.print("last"+last);
+
+           System.out.println("First"+streamSupplier.get().findFirst().get());
+
+
+
+           /* List<String> meterDataList = Files.readAllLines(Paths.get(fileName));
+            if(meterDataList.size()>1){
+                RuleUtil.applyFileValidationRule(meterDataList);
+            }else{
+                throw new IllegalArgumentException("No Start or End Record");
+            }*/
+            //     System.out.println("First"+ meterDataList.get(meterDataList.size()-1));
+            //    Supplier<Stream<String>> streamSupplier = () -> meterDataList.stream();
+            meterReadList = streamSupplier.get().map(mapToItem).distinct().filter(p -> p != null).collect(Collectors.toList());
+
+
+            // Uncomment below to try out test harness.
+//    Collection<MeterReadDTO> meterReads = new SimpleNem12ParserImpl().parseSimpleNem12(simpleNem12File);
+
+            RuleUtil.applyDomainValidationRules(meterReadList);
+//
+            MeterReadDTO read6123456789 = meterReadList.stream().filter(mr -> mr.getNmi().equals("6123456789")).findFirst().get();
+            System.out.println(String.format("Total volume for NMI 6123456789 is %f", read6123456789.getTotalVolume()));  // Should be -36.84
+//
+            MeterReadDTO read6987654321 = meterReadList.stream().filter(mr -> mr.getNmi().equals("6987654321")).findFirst().get();
+            System.out.println(String.format("Total volume for NMI 6987654321 is %f", read6987654321.getTotalVolume()));  // Should be 14.33
+
+            // meterReadList.forEach(value -> System.out.println(value.getVolumes()));
+        }catch (IOException ex){
+
+        }
+
+    }
     private Function<String, MeterReadDTO> mapToItem = (line) -> {
         String[] p = line.split(",");// a CSV has comma separated lines
 
@@ -126,6 +170,6 @@ public class Test {
 
     public static void main(String[] args) {
 
-       new Test().test2();
+       new Test().test3();
     }
 }

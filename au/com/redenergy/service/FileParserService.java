@@ -6,6 +6,7 @@ import au.com.redenergy.model.MeterVolumeDTO;
 import au.com.redenergy.model.Quality;
 import au.com.redenergy.util.RuleUtil;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -16,8 +17,11 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
+import java.util.Optional;
 import java.util.function.Function;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 /**
  * Created by Usman on 6/05/2017.
@@ -29,14 +33,18 @@ public class FileParserService {
     public Collection<MeterReadDTO> getMeterData(File meterDataFile) {
 
         List<MeterReadDTO> meterReadList = new ArrayList<MeterReadDTO>();
-        try {
-            List<String> meterDataList = Files.readAllLines(meterDataFile.toPath());
-            if (meterDataList.size() > 1) { // check if the file has more then two lines to validate the first and last line
+        try(BufferedReader meterData = Files.newBufferedReader(Paths.get(meterDataFile.getPath()))) {
+
+            Supplier<Stream<String>> streamSupplier = () -> meterData.lines();
+            RuleUtil.applyFirstRecordRule(streamSupplier.get().findFirst().get());
+            applyLastRecordRule(meterDataFile);
+         //   List<String> meterDataList = Files.readAllLines(meterDataFile.toPath());
+           /* if (meterDataList.size() > 1) { // check if the file has more then two lines to validate the first and last line
                 RuleUtil.applyFileValidationRule(meterDataList); // validate file if invlad throw exception
             } else {
                 throw new IllegalArgumentException("No Start or End Record Found");
-            }
-            meterReadList = meterDataList.stream().map(mapToItem).distinct().filter(p -> p != null).collect(Collectors.toList()); // converting the data in to objects
+            }*/
+            meterReadList = streamSupplier.get().map(mapToItem).distinct().filter(p -> p != null).collect(Collectors.toList()); // converting the data in to objects
 
             RuleUtil.applyDomainValidationRules(meterReadList); // Apply all the bussiness logic rules
 
@@ -47,6 +55,17 @@ public class FileParserService {
         return meterReadList;
     }
 
+    private void applyLastRecordRule(File meterDataFile){
+
+        try(Stream<String> meterData = Files.lines(Paths.get(meterDataFile.getPath()))){
+
+            Optional<String> last = meterData.reduce((first, second) -> second);
+            RuleUtil.applyLastRecordRule(last.get());
+        }catch (IOException ex){
+            ex.printStackTrace();
+        }
+
+    }
     private Function<String, MeterReadDTO> mapToItem = (line) -> {
         String[] p = line.split(",");// a CSV has comma separated lines
 

@@ -12,16 +12,18 @@ import java.util.List;
  */
 public class RuleUtil {
 
-    public  static void applyFileValidationRule(List<String> meterDataList){
 
-        LineDTO firstLineDTO = new LineDTO(meterDataList.get(0));
+    public  static void applyFirstRecordRule(String firstRecord){
+
+        LineDTO firstLineDTO = new LineDTO(firstRecord);
         FirstRecordRule firstRecordRule = new FirstRecordRule();
         firstRecordRule.validate(firstLineDTO);
+    }
 
-        LineDTO lastLineDTO = new LineDTO(meterDataList.get(meterDataList.size()-1));
+    public  static void applyLastRecordRule(String lastRecord){
+        LineDTO lastLineDTO = new LineDTO(lastRecord);
         LastRecordRule lastRecordRule = new LastRecordRule();
         lastRecordRule.validate(lastLineDTO);
-
     }
 
     public static void applyDomainValidationRules(List<MeterReadDTO> meterReadList){
